@@ -23,6 +23,7 @@
                 url: taggerConnector,
                 data: {
                     action: 'mgr/group/getlist',
+                    limit: 0
                 },
                 context: this,
                 headers: {

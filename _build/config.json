@@ -1,9 +1,9 @@
 {
-  "name": "cb.TaggerSelectInput",
+  "name": "TaggerSelectInput",
   "lowCaseName": "taggerselectinput",
   "description": "Custom Input types for modmore ContentBlocks to select Tagger Groups and Tags",
   "author": "Philip Harvey",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "package": {
     "elements": {
       "plugins": [

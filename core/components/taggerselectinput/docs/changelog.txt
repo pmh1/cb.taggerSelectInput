@@ -1,3 +1,7 @@
+1.0.0-rc2
+============
+Change tag and group listing limit to 0 (all)
+
 1.0.0-rc1
 ============
 Initial build
