@@ -15,9 +15,10 @@
         };
 
         input.loadResources = function() {
-            var contextkey = data.properties.limit_context == 0 ? false : MODx.activePage.record.context_key;
+            var contextkey = data.properties.limit_context == 0 ? false : (MODx.activePage.record && MODx.activePage.record.context_key || false);
             var assetsUrl = MODx.config['taggerselectinput.assets_url'] || MODx.config.assets_url + 'components/taggerselectinput/';
-            var taggerConnector = Tagger.config.connectorUrl || MODx.config.assets_url + 'components/tagger/connector.php';
+            var Tagger = Tagger || {};
+            var taggerConnector = (Tagger.config && Tagger.config.connectorUrl) || MODx.config.assets_url + 'components/tagger/connector.php';
             $.ajax({
                 dataType: 'json',
                 url: taggerConnector,
