@@ -1,3 +1,7 @@
+1.0.0-rc3
+============
+Fix issue when using Input outside the scope of a page.
+
 1.0.0-rc2
 ============
 Change tag and group listing limit to 0 (all)
